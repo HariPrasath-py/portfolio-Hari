@@ -3,108 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Professional portfolio of Hari Prasath S, Software Engineer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <title>Hari Prasath S | Software Engineer</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#section1">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#section2">About Me</a>
-                    <a class="nav-link" href="#section3">Skills</a>
-                    <a class="nav-link" href="#section3.5">Certificates</a>
-                    <a class="nav-link" href="#section4">Contact</a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hari Prasath S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <div class="section1" id="section1">
-        <div class="container text-center text-white">
-            <h1><b>Hari Prasath S</b></h1>
-            <h2><b>Fullstack Developer</b></h2>
-            <button id="resume" class="btn btn-dark mt-3"><i class="fa-solid fa-download"></i> <a href="C:\Users\91882\Downloads\HARI PRASATH S.png">Resume</a></button><br>
-            <a href="#" class="text-white mx-2"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fa-brands fa-github fa-2x"></i></a>
-        </div>
-    </div>
-
-    <!-- About Me Section -->
-    <div class="section2" id="section2">
-        <div class="container">
-            <h1 class="text-center">About</h1>
-            <hr>
-            <h2 class="text-center">Myself, Hari Prasath S</h2>
-
-            <div class="objectives">
-                <h2>Objective</h2>
-                <p>Motivated and detail-oriented engineering graduate seeking a Graduate Trainee position to apply academic knowledge and develop practical skills.</p>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section py-5 text-center">
+            <div class="hero-content">
+                <!-- <img src="./asset/profile-img.webp" alt="Profile Photo" class="profile-photo rounded-circle mb-4"> -->
+                <h1 class="display-4 fw-bold">Hari Prasath S</h1>
+                <h2 class="text-muted mb-8">Software Engineer</h2>
+                <p class="lead mb-6">Building innovative solutions with clean, efficient code</p>
+                <a href="#contact" class="btn btn-primary btn-lg px-4 me-2">Contact Me</a>
+                <a href="#" class="btn btn-outline-secondary btn-lg px-4">Download CV</a>
             </div>
+        </section>
 
-            <div class="objectives">
-                <h2>Education</h2>
-                <h4>BE Computer Science and Engineering</h4>
-                <p>RVS Educational Trust Group of Institutions</p>
-            </div>
-
-            <div class="objectives">
-                <h2>Projects</h2>
-                <h4>Digital Diary</h4>
-                <p>Developed an integrated digital platform including an Address Book, Notebook, and Reminder system to manage tasks efficiently.</p>
-                <h4>Bus Ticket Booking System</h4>
-                <p>Developed a command-line-based bus ticket booking system to handle seat reservations and schedule management.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div class="section3" id="section3">
-        <h1>Skills</h1>
-        <hr>
-        <div class="skills-container">
-            <div class="skill" style="--level: 80%">Zoho Creator <div class="level-bar"></div></div>
-            <div class="skill" style="--level: 75%">Core Java <div class="level-bar"></div></div>
-            <div class="skill" style="--level: 60%">Data Analysis <div class="level-bar"></div></div>
-            <div class="skill" style="--level: 85%">Problem Solving <div class="level-bar"></div></div>
-        </div>
-    </div>
-
-    <!--certificate section-->
-    <div class="section3.5" id="section3.5">
-        <div class="certificates">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="section py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About Me</h2>
+                    <p class="lead">Motivated and detail-oriented engineering graduate with a passion for creating efficient software solutions.</p>
+                    <p>I specialize in developing robust applications with clean, maintainable code. My approach combines technical expertise with creative problem-solving to deliver high-quality software that meets user needs.</p>
+                    <div class="personal-info mt-4">
+                        <p><strong>Location:</strong> Dindigul, India</p>
+                        <p><strong>Email:</strong> hariprashant412@gmail.com</p>
+                        <p><strong>Degree:</strong> B.E. Computer Science</p>
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="./asset/about-img.jpg" alt="About me illustration" class="img-fluid rounded" id="about-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience -->
+        <section id="experience" class="section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Education & Experience</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4"><i class="fas fa-graduation-cap me-2"></i>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>B.E. Computer Science and Engineering</h4>
+                                <span class="text-muted">2024</span>
+                                <p>RVS Educational Trust Group of Institutions</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>Higher Secondary Education</h4>
+                                <span class="text-muted">2020</span>
+                                <p>Devenget Higher Scondary School</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <h3 class="mb-4"><i class="fas fa-briefcase me-2"></i>Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>Process Executive</h4>
+                                <span class="text-muted">Syrma sgs technology | 2024</span>
+                                <ul>
+                                    <li>Operated and monitored RFID tag encoding and testing systems ensuring high accuracy and quality</li>
+                                    <li>Coordinated with the production team to manage workflow, minimize errors, and ensure timely delivery.</li>
+                                    <li>Performed quality control inspections to meet client specifications and ISO standards</li>
+                                    <li>Reported daily production data and identified process issues to support continuous improvement.</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="timeline-item">
+                                <h4>Software Development Project</h4>
+                                <span class="text-muted">2021</span>
+                                <p>Developed a full-stack application for university project</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Skills & Proficiencies</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skill-category mb-4">
+                            <h3 class="mb-3"><i class="fas fa-code me-2"></i>Technical Skills</h3>
+                            <div class="skill-item">
+                                <h5>Java</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>Python</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>HTML/CSS/JavaScript</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>SQL</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="skill-category mb-4">
+                            <h3 class="mb-3"><i class="fas fa-language me-2"></i>Languages</h3>
+                            <div class="skill-item">
+                                <h5>Tamil</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>English</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="mb-3"><i class="fas fa-tools me-2"></i>Tools & Technologies</h3>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary me-2 mb-2">Git</span>
+                                <span class="badge bg-primary me-2 mb-2">Intelij</span>
+                                <span class="badge bg-primary me-2 mb-2">VS Code</span>
+                                <span class="badge bg-primary me-2 mb-2">Eclips</span>
+                                <span class="badge bg-primary me-2 mb-2">Bootstrap</span>
+                                <span class="badge bg-primary me-2 mb-2">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Certifications</h2>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">Certified java Developer</h4>
+                                <p class="card-text">Besant Technologies</p>
+                                <p class="text-muted">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">Web Development Bootcamp</h4>
+                                <p class="card-text">Udemy</p>
+                                <p class="text-muted">2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">Data Science Fundamentals</h4>
+                                <p class="card-text">Coursera</p>
+                                <p class="text-muted">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Get In Touch</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="contact-info">
+                            <h3 class="mb-4">Contact Information</h3>
+                            <p><i class="fas fa-envelope me-2"></i> hariprashant412@gmail.com</p>
+                            <p><i class="fas fa-phone me-2"></i> +91 9543409779</p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i> Dindigul, India</p>
+                            
+                            <div class="social-links mt-4">
+                                <h4 class="mb-3">Connect With Me</h4>
+                                <a href="https://www.linkedin.com/in/hariprasath-s-4b0b1a1b2/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                                <a href="https://github.com/HariPrasath-py" target="_blank" class="social-icon"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <form class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <!-- <button type="submit" class="btn btn-primary"><a href="mailto:hariprashant412@gmail.com">Send Message</a></button> -->
+                            <!-- <button type="button" class="btn btn-info">Info</button> -->
+                            <a href="Mailto:hariprashant412@gmail.com"><button type="submit" class="btn btn-primary">Send Message</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Hari Prasath S. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
 
-    <!-- Contact Section -->
-    <div class="section4" id="section4">
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/{your-form-id}" method="POST">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-send">Send Message</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
